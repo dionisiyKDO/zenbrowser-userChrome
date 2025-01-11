@@ -1,0 +1,132 @@
+/* Tab context menu */
+/* don't care about comments, fuck you in the future, somehow blocked structure is all you will get */
+#context_duplicateTab,
+
+#context_moveTabOptions,
+#context_reopenInContainer,
+#context_selectAllTabs,
+
+#context_closeDuplicateTabs,
+
+#context_zenSplitTabs + menuseparator,
+
+#context_closeTabOptions,
+#context_undoCloseTab,
+
+#context_fullscreenExit + menuseparator,
+
+#context_zenUnloadTab,
+#context_zenTabActions,
+
+#context_zenTabActions + menuseparator,
+
+#context_zen-replace-pinned-url-with-current,
+#context_zen-reset-pinned-tab 
+{
+    display: none !important;
+}
+
+
+/* ---- Context menu ---- */
+/* better to relook at this later */
+
+/* hide page actions */
+#context-bookmarkpage {
+    display: none !important;
+}
+
+/* #context-savepage,  */
+#context-selectall,
+
+#context-sep-selectall,
+
+#context-take-screenshot,
+
+#context-sep-screenshots,
+
+#context-viewsource,
+
+#context-media-eme-separator,
+
+#ublock0_raymondhill_net-menuitem-_uBlock0-blockElement,
+#_446900e4-71c2-419f-a6a7-df9c091e268b_-menuitem-_root {
+    display: none !important;
+}
+
+/* ---- */
+
+/* hide link actions */
+
+#context-openlink,
+#context-openlinkprivate
+{
+    display: none !important;
+}
+
+#context-stripOnShareLink+menuseparator {
+    display: none !important;
+}
+
+#context-zenSplitLink+menuseparator {
+    display: none !important;
+}
+
+
+#context-openlinkinusercontext-menu,
+#context-bookmarklink,
+#context-savelink,
+#context-copylink,
+#context-stripOnShareLink,
+
+#context-zenSplitLink,
+#context-zenAddToWebPanel,
+#context-translate-selection,
+
+#context-searchselect-private,
+
+#context-sep-sendlinktodevice {
+    display: none !important;
+}
+
+/* ---- */
+
+/* Hides elements from the context menu (right click on selected text menu) */
+
+#context-print-selection,
+#context-viewpartialsource-selection {
+    display: none !important;
+}
+
+
+#context-copyimage,
+#context-sendimage,
+#context-viewimageinfo,
+
+#context-sep-setbackground,
+
+#context-setDesktopBackground {
+    display: none !important;
+}
+
+
+/* Swap context menu(right-click on image) elements(saveimage and viewimage) */
+/* #region */
+/* works only if saveimage and viewimage are next to each other (saveimage goes after viewimage) */
+
+/* shift saveimage by default up */
+/* #context-viewimage + #context-saveimage {
+    position: relative !important;
+    top: -30px !important;
+} */
+
+/* if viewimage hidden, shift saveimage back to the original place */
+/* #context-viewimage[hidden="true"] + #context-saveimage {
+    top: 0 !important;
+} */
+
+/* shift viewimage down*/
+/* #context-viewimage:has(+ #context-saveimage) {
+    position: relative !important;
+    bottom: -30px !important;
+} */
+/* #endregion */
